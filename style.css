@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url("http://fonts.cdnfonts.com/css/led-digital-7");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+@media only screen and (max-width: 480px) {
+  .input-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container input {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .input-container button {
+    width: 100%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+  padding: 4em;
+}
+
+main header .title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main span, .title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main header {
+  border-bottom: 2px solid rgb(207, 207, 207);
+}
+
+main .number-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main .number-container #feedback {
+  text-align: center;
+}
+
+main .number-container .number {
+  font-family: "LED Digital 7", sans-serif;
+  font-size: 8em;
+  margin-top: 0.2em;
+}
+
+main .new-game-button {
+  background-image: linear-gradient(to bottom, rgb(72, 77, 88), rgb(156, 157, 157));
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  display: block;
+  font-weight: 700;
+  margin-right: 0.5em;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+main .new-game-button:hover {
+  background-image: linear-gradient(to bottom, rgb(88, 93, 105),rgb(161, 161, 161));
+  cursor: pointer;
+}
+
+main .hidden {
+  background-image: linear-gradient(to bottom, rgb(72, 77, 88), rgb(156, 157, 157));
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  display: none;
+  font-weight: 700;
+  margin-right: 0.5em;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: 300ms ease;
+}
+
+main .input-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+main .input-container input {
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 6px;
+  margin-right: 0.5em;
+  padding: 1em;
+  transition: 300ms ease;
+}
+
+main .input-container input::placeholder {
+  color: rgb(207, 207, 207);
+}
+
+main .input-container button {
+  background-image: linear-gradient(to bottom, rgb(234, 106, 1), rgb(219, 99, 1));
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: 300ms ease;
+}
+
+main .input-container input:focus {
+  outline: none;
+  border-color: rgb(255, 102, 0);
+}
+
+main .input-container button:hover {
+  background-image: linear-gradient(to bottom, rgb(247, 111, 0), rgb(233, 105, 0));
+  cursor: pointer;
+}
+
+main .input-container .disabled {
+  border-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.2), rgba(80, 80, 80, 0.2));
+}
+
+main .input-container .disabled:hover {
+  border-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.2), rgba(80, 80, 80, 0.2));
+  cursor: not-allowed;
+}
+
+.gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom, rgb(234, 106, 1), rgb(219, 99, 1));
+}
+
+.orange {
+  color: rgb(255, 102, 0);
+}
+
+.green {
+  color: rgb(50, 191, 0);
+}
+
+.red {
+  color: rgb(204, 51, 0);
+}

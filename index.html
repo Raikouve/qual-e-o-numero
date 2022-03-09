@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Qual é o número?</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="title gradient">Qual é o número?</h1>
+    </header>
+    <section class="number-container">
+      <span id="feedback"></span>
+      <span id="number" class="number">0</span>
+    </section>
+    <button type="button" id="new-game-button" class="new-game-button hidden">Nova Partida</button>
+    <section class="input-container">
+      <input id="input" type="text" maxlength="3" placeholder="Digite o palpite">
+      <button type="button" id="send-button">Enviar</button>
+    </section>
+  </main>
+</body>
+</html>
